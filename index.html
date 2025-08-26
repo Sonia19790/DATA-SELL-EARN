@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DataCash Pro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="left">
+        <h1>DataCash <span class="pro">Pro</span></h1>
+        <div class="online">🟢 <span id="online-users">12,835</span> online</div>
+      </div>
+      <div class="right">
+        <span id="welcome-user">Hi, User</span>
+        <button class="logout" onclick="logout()">Logout</button>
+      </div>
+    </header>
+
+    <section class="balance-card">
+      <p>Your Balance</p>
+      <h2 id="balance">₹0</h2>
+      <small>🔒 Secure & Encrypted</small>
+    </section>
+
+    <section class="sell-section">
+      <p>Sell 200MB → ₹500</p>
+      <button id="sell-btn" onclick="sellData()">SELL DATA NOW</button>
+      <small id="sell-usage-note"></small>
+    </section>
+
+    <section class="withdraw">
+      <h3>Withdraw Money</h3>
+      <div class="methods">
+        <a href="https://t.me/withdrawal1871?text=Hello,+I+want+to+withdraw+money+from+DataCash+Pro"
+           target="_blank">GPay</a>
+        <a href="https://t.me/withdrawal1871?text=Hello,+I+want+to+withdraw+money+from+DataCash+Pro"
+           target="_blank">PhonePe</a>
+        <a href="https://t.me/withdrawal1871?text=Hello,+I+want+to+withdraw+money+from+DataCash+Pro"
+           target="_blank">Paytm</a>
+      </div>
+    </section>
+
+    <section class="refer">
+      <h3>Refer & Earn</h3>
+      <p>Invite friends and earn <b>₹40</b> when they sign up.</p>
+      <div class="refer-row">
+        <input id="ref-link" readonly />
+        <button onclick="copyRefLink()">Copy</button>
+      </div>
+      <small id="ref-stats">You have earned ₹0 from 0 referrals.</small>
+    </section>
+
+    <section class="history">
+      <h3>Transaction History</h3>
+      <table id="history-table">
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Amount</th>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
